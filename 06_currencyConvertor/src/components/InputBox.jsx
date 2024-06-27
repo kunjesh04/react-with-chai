@@ -27,7 +27,8 @@ function InputBox({
           placeholder="Amount"
           
           value={amount}
-          onChange={(e) => onAmountChange && onAmountChange(Number(e.target.value))} />
+          onChange={(e) => onAmountChange && onAmountChange(Number(e.target.value))} 
+          min={0}/>
       </div>
       <div className="w-1/2 flex flex-wrap justify-end text-right">
         <p className="text-black/40 mb-2 w-full">Currency Type</p>
